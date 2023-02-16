@@ -13,3 +13,20 @@ form.addEventListener("submit", (event) => {
 
   div.innerHTML = "<p>" + sumar(firstNumber, secondNumber) + "</p>";
 });
+
+
+import multi from "./multiplicador";
+
+const firstNumber = document.querySelector("#primer_numero");
+const secondNumber = document.querySelector("#segundo-numero");
+const form2 = document.querySelector("#multi-form");
+const div2 = document.querySelector("#resultado-div");
+
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
+
+  const firstNumber = Number.parseInt(firstNumber.value);
+  const secondNumber = Number.parseInt(secondNumber.value);
+
+  div.innerHTML = "<p>" + multi(firstNumber, secondNumber) + "</p>";
+});
