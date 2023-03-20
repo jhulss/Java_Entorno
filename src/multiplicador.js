@@ -1,5 +1,6 @@
-function multi (a,b)
-{
+function multiplicar(a, b) {
     return a * b;
-}
-export default multi;
+  }
+  
+  export default multiplicar;
+  
