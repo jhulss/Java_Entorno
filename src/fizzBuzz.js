@@ -11,3 +11,5 @@ function fizzBuzz(num) {
   }
 
   export default fizzBuzz;
+
+  

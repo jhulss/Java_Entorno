@@ -1,4 +1,5 @@
 import fizzBuzz from "./fizzBuzz";
+import fizzbuzz from "./fizzBuzz2";
 
 describe("FizzBuzz", () => {
     it("genera para un numero", () => {
@@ -17,13 +18,13 @@ describe("FizzBuzz", () => {
       });
     it("genera otro numero", () =>{
       expect(fizzBuzz(4)).toEqual("4");
-    });
+      });
     it("genera buzz para 5", () => {
       expect(fizzBuzz(5)).toEqual("Buzz");
-    });
-  it("genera buzz para multiplos de 5", () => {
-      expect(fizzBuzz(10)).toEqual("Buzz");
-    });
+      });
+     it("genera fizzbuzz para multiplos de 3 y 5", () => {
+      expect(fizzbuzz(15)).toEqual("FizzBuzz");
+      });
 
   });
 
